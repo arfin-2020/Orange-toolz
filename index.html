@@ -12,43 +12,127 @@
     />
     <title>Document</title>
   </head>
+
   <body>
-    <div class="sidebar">
-      <div class="logo-details">
-        <img class="image" src="./images/Group 6.png" />
-        <p class="logo-name">CARRIERLOCKUP</p>
-        <span class="logo-name2">ACCURATE CARRIER INFO</span>
-      </div>
-      <ul class="nav-links">
-        <li>
-          <a href="#">
-            <i class="bx bx-grid-alt"></i>
-            <span class="link-name">Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-grid-alt"></i>
-            <span class="link-name">Lookup</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-grid-alt"></i>
-            <span class="link-name">Files</span>
-          </a>
-        </li>
-        <li>
-          <div class="icon_link">
+    <main class="mainContainer">
+      <!-- Sidebar start -->
+      <div class="sidebar close">
+        <div class="logo-details">
+          <img class="image" src="./images/Group 6.png" />
+          <p class="logo-name">CARRIERLOCKUP</p>
+          <span class="logo-name2">ACCURATE CARRIER INFO</span>
+        </div>
+        <ul class="nav-links">
+          <li>
             <a href="#">
-              <i class="bx bx-collection"></i>
-              <span class="link_name">Logs</span>
+              <i class="bx bx-grid-alt"></i>
+              <span class="link-name">Dashboard</span>
             </a>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-        </li>
-      </ul>
-    </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-search"></i>
+
+              <span class="link-name">Lookup</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-file"></i>
+              <span class="link-name">Files</span>
+            </a>
+          </li>
+          <li>
+            <div class="icon_link">
+              <a href="#">
+                <i class="bx bx-collection"></i>
+                <span class="link-name">Logs</span>
+              </a>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+
+            <!-- Sub Menu Start -->
+            <ul class="sub-menu">
+              <li>
+                <a href="#">
+                  <i class="bx bxs-file-blank"></i>
+                  <span class="link-name">Signle/Bulk Lookup</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bx bxs-pie-chart-alt-2"></i>
+                  <span class="link-name">Daily Usages</span>
+                </a>
+              </li>
+            </ul>
+            <!-- Sub Menu Finished  -->
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-credit-card-alt"></i>
+              <span class="link-name">Buy Credits</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-sun"></i>
+              <span class="link-name">Integrations</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-user-circle"></i>
+              <span class="link-name">My Profile</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- side bar finished  -->
+
+      <header class="header">
+        <div class="balance">Balance $135</div>
+        <div>
+          <nav>
+            <ul>
+              <!-- <li>
+                  <span class="material-icons-outlined"> notifications </span>
+                </li> -->
+              <!-- <li>
+                  <span class="material-icons-outlined"> favorite_border </span>
+                </li> -->
+              <!-- <li>
+                  <span class="material-icons-outlined"> shopping_cart </span>
+                </li> -->
+              <li>
+                <img src="images/profile.png" class="profile" />
+                <!-- <ul>
+                  <li class="sub-item">
+                    <p>Alexa Jui</p>
+                  </li>
+                  <li class="sub-item">
+                    <span class="material-icons-outlined"> My Profile </span>
+                    <p>Add Fund</p>
+                  </li>
+                  <li class="sub-item">
+                    <span class="material-icons-outlined">
+                      manage_accounts
+                    </span>
+                    <p>API Documentation</p>
+                  </li>
+                  <li class="sub-item">
+                    <span class="material-icons-outlined"> logout </span>
+                    <p>Logout</p>
+                  </li>
+                </ul> -->
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </main>
+
     <script src="./index.js"></script>
   </body>
 </html>
