@@ -10,7 +10,6 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-  
 
     <title>Orange Toolz</title>
   </head>
@@ -166,33 +165,87 @@
 
       <div class="tabContainer">
         <div class="bar">
-          <button class="button" onclick="openTab('UpdateProfile')">Update Profile</button>
-          <button class="button" onclick="openTab('ChangePassword')">Change Password</button>
-          <button class="button" onclick="openTab('EmailNotification')">Email Notification</button>
-          <button class="button" onclick="openTab('AutoRechargeSetting')">Auto Recharge Setting</button>
+          <button class="button" onclick="openTab('UpdateProfile')">
+            Update Profile
+          </button>
+          <button class="button" onclick="openTab('ChangePassword')">
+            Change Password
+          </button>
+          <button class="button" onclick="openTab('EmailNotification')">
+            Email Notification
+          </button>
+          <button class="button" onclick="openTab('AutoRechargeSetting')">
+            Auto Recharge Setting
+          </button>
         </div>
 
         <!-- UpdateProfile Tab -->
-        <div id="UpdateProfile" class="w3-container tabOptions">
-          <h2>London</h2>
-          <p>London is the capital city of England.</p>
+        <div id="UpdateProfile" class="tabOptions">
+          <h1>This is UpdateProfile Area.</h1>
         </div>
-         <!-- ChangePassword Tab -->
-        <div id="ChangePassword" class="w3-container tabOptions" style="display:none">
-          <h2>Paris</h2>
-          <p>Paris is the capital of France.</p> 
+        <!-- ChangePassword Tab -->
+        <div id="ChangePassword" class="tabOptions" style="display: none">
+          <h1>This is ChangePassword Area.</h1>
         </div>
-         <!-- EmailNotification Tab -->
-        <div id="EmailNotification" class="w3-container tabOptions" style="display:none">
-          <h2>Tokyo</h2>
-          <p>Tokyo is the capital of Japan.</p>
+        <!-- EmailNotification Tab -->
+        <div
+          id="EmailNotification"
+          class="emailNotification tabOptions"
+          style="display: none"
+        >
+          <div class="toggle">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <span>Notify me when list verification completes</span>
+          </div>
+          <div class="toggle">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <span class="onlyGreyColor"
+              >Notify me when list export completes</span
+            >
+          </div>
+          <div class="toggle">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <span
+              >Notify me when list verification result is about to expire</span
+            >
+          </div>
+          <div class="toggle">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <span>Receive Low Credits Email</span>
+          </div>
+          <div class="inputField">
+            <div>
+              <p class="onlyGreyColor">
+                Send Email to <span class="strictSign">*</span>
+              </p>
+              <input type="gmail" placeholder="arfinchowdhurarif7@gmail.com" />
+            </div>
+            <div>
+              <p class="onlyGreyColor">
+                When Creditcart are less than <span class="strictSign">*</span>
+              </p>
+              <input type="number" placeholder="xxxxxxxxxxxx4684" />
+            </div>
+          </div>
+          <button class="SaveChanges_Button">Save Changes</button>
         </div>
-         <!-- AutoRechargeSetting Tab -->
-        <div id="AutoRechargeSetting" class="w3-container tabOptions" style="display:none">
-          <h2>Tokyo</h2>
-          <p>Tokyo is the capital of Japan.</p>
+        <!-- AutoRechargeSetting Tab -->
+        <div id="AutoRechargeSetting" class="tabOptions" style="display: none">
+          <h1>This is AutoRechargeSetting Area.</h1>
         </div>
-      
+      </div>
     </main>
 
     <script src="./index.js"></script>
