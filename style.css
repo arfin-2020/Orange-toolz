@@ -287,15 +287,14 @@ ul li ul:hover {
 }
 .creditCard {
   position: absolute;
-  height: 334px;
+  height: 270px;
   width: 70%;
-  left: 450px;
+  left: 400px;
   box-sizing: border-box;
   background: #ffffff;
   border: 1px solid #f2f2f4;
   border-radius: 10px;
   color: black;
-  /* border: 2px solid #f2f; */
 }
 h5 {
   font-size: 20px;
@@ -305,29 +304,110 @@ h5 {
 .allCareditCards {
   display: flex;
   padding: 30px;
-  /* justify-content: center; */
-  /* border: 2px solid #f2f; */
 }
 .creditCard1 {
   padding: 10px;
   width: 387px;
   height: 154px;
-  border: 1px solid rgb(21, 14, 214);
+  color: grey;
 }
 .creditCard2 {
   padding: 10px;
   width: 387px;
   height: 154px;
   margin: 0 15px 0 15px;
-  border: 1px solid rgb(92, 178, 53);
+  color: grey;
 }
 .creditCard3 {
   padding: 10px;
   width: 387px;
   height: 154px;
+  color: grey;
+}
+.creditCard1:hover {
+  padding: 10px;
+  width: 387px;
+  height: 154px;
+  border-radius: 10px;
+  border: 1px solid rgb(21, 14, 214);
+  color: black;
+}
+.creditCard2:hover {
+  padding: 10px;
+  width: 387px;
+  height: 154px;
+  margin: 0 15px 0 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(92, 178, 53);
+  color: black;
+}
+.creditCard3:hover {
+  padding: 10px;
+  width: 387px;
+  height: 154px;
+  border-radius: 10px;
   border: 1px solid rgb(127, 53, 127);
+  color: black;
+}
+.delete_icon {
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 240px;
+  border-radius: 40px;
+  background: #f2f2f4;
+  padding: 5px;
+  color: #bdbdbd;
+}
+.delete_icon:hover {
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 240px;
+  border-radius: 40px;
+  background: #ffd7d7;
+  padding: 5px;
+  color: #ff4242;
 }
 
 input {
   border: none;
+  margin-top: 20px;
+  padding: 5px 0 5px 0;
+  box-sizing: border-box;
+}
+
+/* TabContainer Start  */
+
+.tabContainer {
+  position: absolute;
+  left: 600px;
+  top: 520px;
+  width: 65%;
+  color: black;
+  /* border: 1px solid red; */
+}
+.bar {
+  text-align: center;
+}
+.button {
+  width: 190px;
+  height: 28px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #26262e;
+  border: 1px solid grey;
+  margin: 10px;
+  background: white;
+  cursor: pointer;
+}
+.button:hover {
+  width: 190px;
+  height: 28px;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  margin: 10px;
+  border: 1px solid grey;
+  text-decoration: underline;
+  color: #ff7901;
 }

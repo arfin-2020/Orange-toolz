@@ -10,6 +10,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+  
 
     <title>Orange Toolz</title>
   </head>
@@ -144,22 +145,54 @@
           <div class="allCareditCards">
             <div class="creditCard1">
               <p>Credit Card 1</p>
-              <i class="bx bx-trash"></i>
+              <i class="bx bx-trash delete_icon"></i>
               <input type="text" placeholder="xxxxxxxxxxxx4684" />
             </div>
             <div class="creditCard2">
-              <p>Credit Card 1</p>
-              <i class="bx bx-trash"></i>
+              <p>Credit Card 2 (Dafult)</p>
+              <i class="bx bx-trash delete_icon"></i>
               <input type="text" placeholder="xxxxxxxxxxxx4684" />
             </div>
             <div class="creditCard3">
-              <p>Credit Card 1</p>
-              <i class="bx bx-trash"></i>
+              <p>Credit Card 3</p>
+              <i class="bx bx-trash delete_icon"></i>
               <input type="text" placeholder="xxxxxxxxxxxx4684" />
             </div>
           </div>
         </div>
       </div>
+
+      <!-- TabContainer Start  -->
+
+      <div class="tabContainer">
+        <div class="bar">
+          <button class="button" onclick="openTab('UpdateProfile')">Update Profile</button>
+          <button class="button" onclick="openTab('ChangePassword')">Change Password</button>
+          <button class="button" onclick="openTab('EmailNotification')">Email Notification</button>
+          <button class="button" onclick="openTab('AutoRechargeSetting')">Auto Recharge Setting</button>
+        </div>
+
+        <!-- UpdateProfile Tab -->
+        <div id="UpdateProfile" class="w3-container tabOptions">
+          <h2>London</h2>
+          <p>London is the capital city of England.</p>
+        </div>
+         <!-- ChangePassword Tab -->
+        <div id="ChangePassword" class="w3-container tabOptions" style="display:none">
+          <h2>Paris</h2>
+          <p>Paris is the capital of France.</p> 
+        </div>
+         <!-- EmailNotification Tab -->
+        <div id="EmailNotification" class="w3-container tabOptions" style="display:none">
+          <h2>Tokyo</h2>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+         <!-- AutoRechargeSetting Tab -->
+        <div id="AutoRechargeSetting" class="w3-container tabOptions" style="display:none">
+          <h2>Tokyo</h2>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+      
     </main>
 
     <script src="./index.js"></script>
